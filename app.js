@@ -88,12 +88,12 @@ for (i = 0; i <= n; i++) {
 // Exercise 5 Section
 console.log("EXERCISE 5:\n==========\n");
 
-let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-n = Math.round(Math.random() * (1000 - 1) + 1);
-let start = Math.round(Math.random() * (10 - 1) + 1);
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let end = Math.round(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
 
-for (let i = start; i <= n; i++) {
+for (let i = start; i <= end; i++) {
   if (i % fizzDivisor === 0 && i % buzzDivisor === 0) {
     console.log("FIZZBUZZ");
   } else if (i % fizzDivisor === 0) {
